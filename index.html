@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="fr" id="top">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DENEM Academy · Séance 24 · Évaluation finale</title>
+<meta name="description" content="Support DENEM Academy - Séance 24 : Évaluation finale. Phase 6 - Validation.">
+<link rel="icon" href="../seance-23-chatbot-ia-vocal-texte/logo-denem.jpeg">
+<style>
+:root{--ink:#000;--paper:#fff;--muted:#111;--line:#000;--accent:#facc15;--shadow:6px 6px 0 var(--accent);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:#000;letter-spacing:0;overflow-x:hidden}a{color:inherit}.progress{position:fixed;inset:0 0 auto 0;height:8px;background:var(--accent);z-index:50}.topbar{position:sticky;top:8px;z-index:40;background:#fff;border-top:4px solid var(--accent);border-bottom:2px solid #000}.topbar-inner{max-width:1280px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:950}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border:2px solid #000;background:var(--accent);box-shadow:4px 4px 0 var(--accent);font:950 18px/1 ui-monospace,SFMono-Regular,Menlo,monospace}.brand small{display:block;font:900 11px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.12em}.links{display:flex;gap:8px;flex-wrap:wrap}.links a,.tag,.btn{border:2px solid #000;background:#fff;box-shadow:4px 4px 0 var(--accent);padding:9px 11px;text-decoration:none;font:900 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.08em}.links a:hover,.btn.primary,.tag.fill{background:var(--accent)}.hero{border-bottom:3px solid #000;background:#fff}.wrap{max-width:1280px;margin:auto;padding:58px 20px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:start}h1{font-size:clamp(48px,8vw,104px);line-height:.9;margin:20px 0 18px;font-weight:950;border-left:14px solid var(--accent);padding-left:20px}h2{font-size:clamp(31px,5vw,58px);line-height:1;margin:0 0 18px;font-weight:950;border-left:10px solid var(--accent);padding-left:16px}.lead{font-size:20px;line-height:1.7;max-width:880px}.panel,.card,.score-card,.timeline li,.deliverable{border:2px solid #000;background:#fff;box-shadow:var(--shadow);padding:22px}.panel.accent,.card.accent,.score-card.accent{background:var(--accent)}.meta{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.grid{display:grid;gap:18px}.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}.card b,.deliverable b,.score-card b{display:block;margin-bottom:8px;font-size:18px}.card p,.deliverable p,.score-card p,.timeline p{line-height:1.65;margin:0}.section{border-bottom:2px solid #000}.timeline{display:grid;gap:14px;list-style:none;margin:0;padding:0}.timeline li{display:grid;grid-template-columns:64px 1fr;gap:16px}.timeline span{display:grid;place-items:center;width:52px;height:52px;border:2px solid #000;background:var(--accent);font:950 15px/1 ui-monospace,SFMono-Regular,Menlo,monospace}.score{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.score-card strong{font-size:42px;line-height:1}.checklist{list-style:none;margin:0;padding:0;display:grid;gap:12px}.checklist li{border:2px solid #000;box-shadow:4px 4px 0 var(--accent);padding:16px;font-weight:800;line-height:1.45}.checklist li::before{content:"";display:inline-block;width:16px;height:16px;border:2px solid #000;margin-right:10px;vertical-align:-2px;background:#fff}.footer{padding:28px 20px}.footer-inner{max-width:1280px;margin:auto;font:900 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.1em}@media(max-width:900px){.hero-grid,.grid-2,.grid-3,.score{grid-template-columns:1fr}.topbar-inner{align-items:flex-start;flex-direction:column}.links{overflow-x:auto;flex-wrap:nowrap;width:100%;padding-bottom:4px}.links a{white-space:nowrap}.timeline li{grid-template-columns:1fr}h1{padding-left:14px}.wrap{padding:42px 16px}.lead{font-size:17px}}
+</style>
+
+<style id="denem-act-system">
+:root {
+  --denem-act-color: #FACC15;
+  --denem-act-bg: #ffffff;
+}
+body {
+  background: #ffffff !important;
+}
+.progress,
+.progress-bar,
+#progress {
+  background: var(--denem-act-color) !important;
+}
+.denem-act-ribbon,
+.denem-sources-final {
+  background: #ffffff;
+  color: #000000;
+  border-top: 6px solid var(--denem-act-color);
+  border-bottom: 4px solid #000000;
+}
+.denem-act-ribbon {
+  padding: clamp(18px, 3vw, 34px) 18px;
+}
+.denem-act-ribbon__inner,
+.denem-sources-final__inner {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.denem-act-ribbon__topline,
+.denem-act-ribbon__meta,
+.denem-act-ribbon__chips,
+.denem-act-ribbon__phase-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.denem-act-ribbon__topline {
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.denem-act-ribbon__kicker,
+.denem-sources-final__kicker,
+.denem-act-ribbon__session,
+.denem-act-ribbon__meta span,
+.denem-act-ribbon__phase-nav strong,
+.denem-act-ribbon__phase-nav a {
+  border: 2px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  padding: 8px 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 var(--denem-act-color);
+}
+.denem-act-ribbon__kicker,
+.denem-act-ribbon__phase-nav a.is-current,
+.denem-act-ribbon__phase-nav strong {
+  background: var(--denem-act-color);
+}
+.denem-act-ribbon__session {
+  background: #000000;
+  color: #ffffff;
+  box-shadow: 4px 4px 0 var(--denem-act-color);
+}
+.denem-act-ribbon h2,
+.denem-sources-final h2 {
+  max-width: 1120px;
+  margin: 10px 0 10px;
+  color: #000000;
+  font-size: clamp(38px, 6vw, 86px);
+  line-height: .94;
+  font-weight: 950;
+  letter-spacing: 0;
+  border-left: 14px solid var(--denem-act-color);
+  padding-left: clamp(14px, 2vw, 24px);
+}
+.denem-act-ribbon p {
+  max-width: 960px;
+  margin: 0;
+  color: #000000;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.65;
+}
+.denem-act-ribbon__chips,
+.denem-act-ribbon__phase-nav {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.denem-act-ribbon__chips span {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-weight: 900;
+  box-shadow: 3px 3px 0 var(--denem-act-color);
+}
+.denem-act-ribbon__phase-nav {
+  padding-top: 14px;
+  border-top: 2px solid #000000;
+}
+.denem-act-ribbon__phase-nav a:hover {
+  background: var(--denem-act-color);
+}
+.denem-sources-final {
+  padding: 56px 18px;
+}
+.eyebrow,
+.section-meta span,
+.meta-row .num,
+.nav a.active,
+.nav-chip.is-active,
+.summary-card b {
+  background-color: var(--denem-act-color) !important;
+  border-color: #000000 !important;
+  color: #000000 !important;
+}
+@media (max-width: 700px) {
+  .denem-act-ribbon__topline {
+    justify-content: flex-start;
+  }
+  .denem-act-ribbon__phase-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .denem-act-ribbon h2,
+  .denem-sources-final h2 {
+    font-size: 34px;
+  }
+}
+</style>
+<style id="denem-support-visual-theme">
+:root {
+  --denem-act: #FACC15;
+  --denem-act-number: "6";
+}
+</style>
+<style id="denem-session-media-system">
+.denem-session-switcher {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(280px, 720px);
+  gap: 10px;
+  align-items: center;
+  margin: 18px auto 0;
+  padding: 14px 0;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  max-width: 980px;
+}
+.denem-session-switcher label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 2px solid #000000;
+  background: var(--denem-act-color, var(--denem-act, #60A5FA));
+  color: #000000;
+  box-shadow: 4px 4px 0 var(--denem-act-color, var(--denem-act, #60A5FA));
+  padding: 10px 12px;
+  font: 950 12px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.denem-session-switcher select {
+  width: 100%;
+  min-height: 44px;
+  border: 2px solid #000000;
+  border-radius: 0;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 4px 4px 0 var(--denem-act-color, var(--denem-act, #60A5FA));
+  padding: 0 44px 0 14px;
+  font: 900 14px/1.1 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  cursor: pointer;
+  appearance: auto;
+}
+.media-card,
+.shot,
+.visual,
+.hero-card,
+.poster,
+.image-card,
+.screen,
+.capture,
+figure[class*="media"],
+figure[class*="visual"],
+figure[class*="shot"] {
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #ffffff !important;
+  background-image:
+    linear-gradient(45deg, rgba(0,0,0,.035) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(0,0,0,.035) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(0,0,0,.035) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(0,0,0,.035) 75%) !important;
+  background-size: 18px 18px !important;
+  background-position: 0 0, 0 9px, 9px -9px, -9px 0 !important;
+}
+.media-card > img,
+.shot > img,
+.visual > img,
+.hero-card > img,
+figure[class*="media"] > img,
+figure[class*="visual"] > img,
+figure[class*="shot"] > img {
+  position: relative !important;
+  z-index: 1 !important;
+  background: #ffffff !important;
+}
+.media-card::after,
+.shot::after,
+.visual::after,
+.hero-card::after,
+figure[class*="media"]::after,
+figure[class*="visual"]::after,
+figure[class*="shot"]::after {
+  content: "Capture";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 2;
+  border: 2px solid #000000;
+  background: var(--denem-act-color, var(--denem-act, #60A5FA));
+  color: #000000;
+  padding: 6px 8px;
+  font: 950 10px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  pointer-events: none;
+}
+.media-card:has(figcaption)::after,
+.shot:has(figcaption)::after,
+.visual:has(figcaption)::after,
+figure[class*="media"]:has(figcaption)::after,
+figure[class*="visual"]:has(figcaption)::after,
+figure[class*="shot"]:has(figcaption)::after {
+  content: none;
+}
+.media-card:empty,
+.shot:empty,
+.visual:empty,
+.hero-card:empty,
+figure[class*="media"]:empty,
+figure[class*="visual"]:empty,
+figure[class*="shot"]:empty {
+  min-height: 220px !important;
+  display: grid !important;
+  place-items: center !important;
+}
+.media-card:empty::before,
+.shot:empty::before,
+.visual:empty::before,
+.hero-card:empty::before,
+figure[class*="media"]:empty::before,
+figure[class*="visual"]:empty::before,
+figure[class*="shot"]:empty::before,
+.is-media-missing::before {
+  content: "Bloc media a completer";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000000;
+  background: var(--denem-act-color, var(--denem-act, #60A5FA));
+  color: #000000;
+  padding: 12px 14px;
+  font: 950 12px/1.15 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.is-media-missing {
+  min-height: 220px !important;
+  display: grid !important;
+  place-items: center !important;
+}
+.is-media-missing > img {
+  display: none !important;
+}
+@media (max-width: 700px) {
+  .denem-session-switcher {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+  .denem-session-switcher select {
+    font-size: 13px;
+  }
+}
+</style>
+</head>
+<body data-phase="6" data-session="24" data-old-session="24">
+<section class="denem-act-ribbon" aria-label="En-tête du support de cours">
+  <div class="denem-act-ribbon__inner">
+    <div class="denem-act-ribbon__topline">
+      <span class="denem-act-ribbon__kicker">Phase 6 · Validation</span>
+      <span class="denem-act-ribbon__session">Séance 24 · ex-24</span>
+    </div>
+    <h2>Évaluation finale</h2>
+    <p>On valide la maîtrise du parcours complet avec une évaluation finale.</p>
+    <div class="denem-act-ribbon__chips" aria-label="Repères utiles du support">
+      <span>Validation</span>
+      <span>Séance 24</span>
+      <span>Parcours DENEM Academy</span>
+      <span>Support technique séances 1 à 24</span>
+    </div>
+    <div class="denem-session-switcher" aria-label="Changer de séance">
+      <label for="denem-session-switch">Changer de séance</label>
+      <select id="denem-session-switch">
+        <option value="../DENEMACADEMY-SEANCE-1-CLAUDE-CODE/index.html">01 — Claude Code : agents IA &amp; automatisations · Phase 0</option>
+        <option value="../seance-02-codex/index.html">02 — Codex : agents IA &amp; automatisations · Phase 0</option>
+        <option value="../seance-03-n8n/index.html">03 — Découverte et prise en main de n8n · Phase 0</option>
+        <option value="../seance-04-cowork/index.html">04 — Maîtriser Claude Cowork · Phase 0</option>
+        <option value="../formation-seance-06-qg-cowork/index.html">05 — Créer son QG de travail Cowork · Phase 0</option>
+        <option value="../seance-05-etude-marche/index.html">06 — Étude de marché complète · Phase 1</option>
+        <option value="../seance-07-identite-marque/index.html">07 — Créer son identité de marque · Phase 1</option>
+        <option value="../seance-09-site-web-wordpress/index.html">08 — Créer et déployer son site WordPress · Phase 2</option>
+        <option value="../formation-seance-08-audit-seo-geo/index.html">09 — Audit &amp; stratégie SEO/GEO automatisé · Phase 2</option>
+        <option value="../denemacademy-seance-10-blog-automatique/index.html">10 — Créer son blog pour attirer des leads · Phase 2</option>
+        <option value="../seance-11-automatiser-publication-article/index.html">11 — Automatiser la publication d'articles · Phase 2</option>
+        <option value="../formation-seance-12-profil-linkedin/index.html">12 — Profil LinkedIn optimisé · Phase 3</option>
+        <option value="../seance-13-creer-son-lead-magnet/index.html">13 — Créer son lead magnet · Phase 3</option>
+        <option value="../seance-14-automatiser-posts-linkedin/index.html">14 — Automatiser ses posts LinkedIn · Phase 3</option>
+        <option value="../denemacademy-seance-15-leads-gratuits/index.html">15 — Obtenir des leads gratuits · Phase 4</option>
+        <option value="../seance-16-enrichir-leads-data-gouv/index.html">16 — Enrichir ses leads avec data.gouv · Phase 4</option>
+        <option value="../formation-seance-17-enrichir-leads-apify/index.html">17 — Enrichir ses leads avec Apify · Phase 4</option>
+        <option value="../seance-18-nettoyer-scorer-bdd/index.html">18 — Nettoyer / scorer sa BDD · Phase 4</option>
+        <option value="../seance-19-prospection-automatisee/index.html">19 — Stratégie de prospection automatisée · Phase 4</option>
+        <option value="../seance-20-audit-technique-client/index.html">20 — Premier RDV commercial &amp; audit client · Phase 5</option>
+        <option value="../seance-21-organisation-projet-client/index.html">21 — Organiser son projet client · Phase 5</option>
+        <option value="../seance-22-rag-supabase/index.html">22 — Créer un RAG sur mesure · Phase 5</option>
+        <option value="../seance-23-chatbot-ia-vocal-texte/index.html">23 — Créer un chatbot IA vocal/texte pour ses clients · Phase 5</option>
+        <option value="#top" selected>24 — Évaluation finale · Phase 6</option>
+      </select>
+    </div>
+    <nav class="denem-act-ribbon__phase-nav" aria-label="Navigation dans la phase">
+      <strong>Dans cette phase</strong>
+      <a class="is-current" aria-current="page" href="#top">24 · Évaluation finale</a>
+    </nav>
+  </div>
+</section>
+
+<div class="progress" aria-hidden="true"></div>
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top"><span class="brand-mark">24</span><span>DENEM Academy<small>Phase 6 · Validation</small></span></a>
+    <div class="links">
+      <a href="#objectif">Objectif</a>
+      <a href="#livrables">Livrables</a>
+      <a href="#evaluation">Évaluation</a>
+      <a href="#deroule">Déroulé</a>
+      <a href="#checklist">Checklist</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag fill">Séance 24 · Évaluation finale</span>
+      <h1>Valider le parcours complet.</h1>
+      <p class="lead">Tu ne valides pas seulement des outils. Tu valides ta capacité à partir d'un besoin client, cadrer le problème, produire un livrable, vérifier le résultat et expliquer clairement la valeur.</p>
+      <div class="meta">
+        <span class="tag">Audit</span>
+        <span class="tag">Build</span>
+        <span class="tag">Delivery</span>
+        <span class="tag">Présentation</span>
+      </div>
+    </div>
+    <aside class="panel accent">
+      <h2>Résultat attendu</h2>
+      <p class="lead">Un mini-projet client complet, présentable, vérifié et documenté, avec une soutenance courte et une checklist de livraison.</p>
+    </aside>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="objectif">
+    <div class="wrap grid grid-3">
+      <article class="card accent"><b>1. Comprendre</b><p>Identifier le besoin client réel, les contraintes, les risques et le résultat attendu.</p></article>
+      <article class="card"><b>2. Construire</b><p>Produire un système simple : page, automation, RAG, chatbot, dashboard ou workflow selon le cas choisi.</p></article>
+      <article class="card"><b>3. Défendre</b><p>Présenter la valeur, les limites, la maintenance et les prochaines étapes sans jargon inutile.</p></article>
+    </div>
+  </section>
+
+  <section class="section" id="livrables">
+    <div class="wrap">
+      <h2>Les livrables à rendre</h2>
+      <div class="grid grid-2">
+        <div class="deliverable"><b>Brief client</b><p>Contexte, problème, objectif, cible, contraintes, sources utilisées.</p></div>
+        <div class="deliverable"><b>Audit ou diagnostic</b><p>Constats, opportunités, priorités, risques et recommandations.</p></div>
+        <div class="deliverable"><b>Prototype ou système</b><p>Un livrable testable : page, workflow, base, chatbot, RAG, CRM ou automatisation.</p></div>
+        <div class="deliverable"><b>Documentation de livraison</b><p>Mode d'emploi court, limites, maintenance, checklist et suite proposée.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="evaluation">
+    <div class="wrap">
+      <h2>Grille d'évaluation</h2>
+      <div class="score">
+        <div class="score-card accent"><strong>25%</strong><b>Cadrage</b><p>Le besoin client est clair et priorisé.</p></div>
+        <div class="score-card"><strong>25%</strong><b>Exécution</b><p>Le livrable fonctionne et reste simple à reprendre.</p></div>
+        <div class="score-card"><strong>25%</strong><b>Vérification</b><p>Les tests, sources et limites sont visibles.</p></div>
+        <div class="score-card"><strong>25%</strong><b>Présentation</b><p>La valeur est expliquée comme une offre client.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="deroule">
+    <div class="wrap">
+      <h2>Déroulé conseillé</h2>
+      <ol class="timeline">
+        <li><span>01</span><div><b>Choisir le cas</b><p>Un client fictif ou réel, un problème précis, un livrable réaliste.</p></div></li>
+        <li><span>02</span><div><b>Faire l'audit</b><p>Rassembler les sources, comprendre la situation, décider ce qui compte vraiment.</p></div></li>
+        <li><span>03</span><div><b>Construire une V1</b><p>Créer un livrable minimal, testable et compréhensible.</p></div></li>
+        <li><span>04</span><div><b>Tester et corriger</b><p>Contrôler les erreurs, le responsive, les données, les limites et les actions sensibles.</p></div></li>
+        <li><span>05</span><div><b>Présenter</b><p>Montrer le problème traité, le système, la valeur, la maintenance et la suite.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="checklist">
+    <div class="wrap">
+      <h2>Checklist finale</h2>
+      <ul class="checklist">
+        <li>Le projet part d'un vrai besoin client, pas d'un outil choisi au hasard.</li>
+        <li>Les sources, prompts importants et décisions sont documentés.</li>
+        <li>Le livrable peut être testé par quelqu'un d'autre.</li>
+        <li>Les limites et risques sont annoncés clairement.</li>
+        <li>La prochaine action client est évidente : validation, correction, déploiement ou maintenance.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">DENEM Academy · Support technique séances 1 à 24 · Phase 6 validation</div>
+</footer>
+<script id="denem-session-media-script">
+(() => {
+  const select = document.getElementById('denem-session-switch');
+  if (select) {
+    select.addEventListener('change', () => {
+      const value = select.value;
+      if (value && value !== '#top') window.location.href = value;
+    });
+  }
+  const markMissing = (img) => {
+    const frame = img.closest('figure, .media-card, .shot, .visual, .hero-card, .poster, .image-card, .screen, .capture');
+    if (!frame) return;
+    frame.classList.add('is-media-missing');
+    frame.setAttribute('aria-label', 'Bloc media a completer');
+  };
+  document.querySelectorAll('img').forEach((img) => {
+    if (!img.getAttribute('src')) markMissing(img);
+    if (img.complete && img.naturalWidth === 0) markMissing(img);
+    img.addEventListener('error', () => markMissing(img), { once: true });
+  });
+})();
+</script>
+</body>
+</html>

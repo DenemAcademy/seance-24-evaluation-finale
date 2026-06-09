@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DENEM Academy · Séance 24 · Évaluation finale</title>
-<meta name="description" content="Support DENEM Academy - Séance 24 : Évaluation finale. Phase 6 - Validation.">
+<title>DENEM Academy · Séance 24 · Mini-produit mobile IA</title>
+<meta name="description" content="Support DENEM Academy - Séance 24 : créer une application mobile IA avec connexion, BDD, mémoire utilisateur et API IA. Phase 6 - Validation.">
 <link rel="icon" href="../seance-23-chatbot-ia-vocal-texte/logo-denem.jpeg">
 <style>
 :root{--ink:#000;--paper:#fff;--muted:#111;--line:#000;--accent:#facc15;--shadow:6px 6px 0 var(--accent);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -548,13 +548,13 @@ figure[class*="shot"]:empty::before,
       <span class="denem-act-ribbon__kicker">Phase 6 · Validation</span>
       <span class="denem-act-ribbon__session">Séance 24 · ex-24</span>
     </div>
-    <h2>Évaluation finale</h2>
-    <p>On valide la maîtrise du parcours complet avec une évaluation finale.</p>
+    <h2>Mini-produit mobile IA</h2>
+    <p>Dernier exercice : imaginer, construire et présenter une application mobile IA utile, avec un vrai système derrière.</p>
     <div class="denem-act-ribbon__chips" aria-label="Repères utiles du support">
-      <span>Validation</span>
+      <span>App mobile</span>
       <span>Séance 24</span>
-      <span>Parcours DENEM Academy</span>
-      <span>Support technique séances 1 à 24</span>
+      <span>BDD + mémoire</span>
+      <span>API IA</span>
     </div>
     <div class="denem-session-switcher" aria-label="Changer de séance">
       <label for="denem-session-switch">Changer de séance</label>
@@ -582,12 +582,12 @@ figure[class*="shot"]:empty::before,
         <option value="../seance-21-organisation-projet-client/index.html">21 — Organiser son projet client · Phase 5</option>
         <option value="../seance-22-rag-supabase/index.html">22 — Créer un RAG sur mesure · Phase 5</option>
         <option value="../seance-23-chatbot-ia-vocal-texte/index.html">23 — Créer un chatbot IA vocal/texte pour ses clients · Phase 5</option>
-        <option value="#top" selected>24 — Évaluation finale · Phase 6</option>
+        <option value="#top" selected>24 — Mini-produit mobile IA · Phase 6</option>
       </select>
     </div>
     <nav class="denem-act-ribbon__phase-nav" aria-label="Navigation dans la phase">
       <strong>Dans cette phase</strong>
-      <a class="is-current" aria-current="page" href="#top">24 · Évaluation finale</a>
+      <a class="is-current" aria-current="page" href="#top">24 · Mini-produit mobile IA</a>
     </nav>
   </div>
 </section>
@@ -597,11 +597,11 @@ figure[class*="shot"]:empty::before,
   <div class="topbar-inner">
     <a class="brand" href="#top"><span class="brand-mark">24</span><span>DENEM Academy<small>Phase 6 · Validation</small></span></a>
     <div class="links">
-      <a href="#objectif">Objectif</a>
-      <a href="#livrables">Livrables</a>
-      <a href="#evaluation">Évaluation</a>
-      <a href="#deroule">Déroulé</a>
-      <a href="#checklist">Checklist</a>
+      <a href="#mission">Mission</a>
+      <a href="#liberte">Liberté</a>
+      <a href="#obligatoire">Obligatoire</a>
+      <a href="#memoire">Mémoire</a>
+      <a href="#rendu">Rendu</a>
     </div>
   </div>
 </nav>
@@ -609,78 +609,116 @@ figure[class*="shot"]:empty::before,
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="tag fill">Séance 24 · Évaluation finale</span>
-      <h1>Valider le parcours complet.</h1>
-      <p class="lead">Tu ne valides pas seulement des outils. Tu valides ta capacité à partir d'un besoin client, cadrer le problème, produire un livrable, vérifier le résultat et expliquer clairement la valeur.</p>
+      <span class="tag fill">Séance 24 · Exercice final</span>
+      <h1>Créer une app mobile IA.</h1>
+      <p class="lead">Tu vas créer une application mobile originale avec Codex ou Claude Code. Le sujet est libre, mais l'app doit avoir une connexion utilisateur, une base de données, une mémoire personnelle et une vraie API IA.</p>
       <div class="meta">
-        <span class="tag">Audit</span>
-        <span class="tag">Build</span>
-        <span class="tag">Delivery</span>
-        <span class="tag">Présentation</span>
+        <span class="tag">Mobile</span>
+        <span class="tag">Connexion</span>
+        <span class="tag">BDD</span>
+        <span class="tag">API IA</span>
       </div>
     </div>
     <aside class="panel accent">
       <h2>Résultat attendu</h2>
-      <p class="lead">Un mini-projet client complet, présentable, vérifié et documenté, avec une soutenance courte et une checklist de livraison.</p>
+      <p class="lead">Une V1 simple, testable et présentable : l'utilisateur se connecte, utilise l'IA, retrouve son historique et comprend la valeur de ton idée.</p>
     </aside>
   </div>
 </header>
 
 <main>
-  <section class="section" id="objectif">
+  <section class="section" id="mission">
     <div class="wrap grid grid-3">
-      <article class="card accent"><b>1. Comprendre</b><p>Identifier le besoin client réel, les contraintes, les risques et le résultat attendu.</p></article>
-      <article class="card"><b>2. Construire</b><p>Produire un système simple : page, automation, RAG, chatbot, dashboard ou workflow selon le cas choisi.</p></article>
-      <article class="card"><b>3. Défendre</b><p>Présenter la valeur, les limites, la maintenance et les prochaines étapes sans jargon inutile.</p></article>
+      <article class="card accent"><b>1. Imaginer</b><p>Choisis une idée utile : métier, passion, problème quotidien ou outil client.</p></article>
+      <article class="card"><b>2. Construire</b><p>Crée une app mobile avec Codex ou Claude Code, étape par étape.</p></article>
+      <article class="card"><b>3. Expliquer</b><p>Présente ce que l'app fait, pourquoi elle existe et comment elle fonctionne.</p></article>
     </div>
   </section>
 
-  <section class="section" id="livrables">
+  <section class="section" id="liberte">
     <div class="wrap">
-      <h2>Les livrables à rendre</h2>
+      <h2>01. Choisis ton idée</h2>
       <div class="grid grid-2">
-        <div class="deliverable"><b>Brief client</b><p>Contexte, problème, objectif, cible, contraintes, sources utilisées.</p></div>
-        <div class="deliverable"><b>Audit ou diagnostic</b><p>Constats, opportunités, priorités, risques et recommandations.</p></div>
-        <div class="deliverable"><b>Prototype ou système</b><p>Un livrable testable : page, workflow, base, chatbot, RAG, CRM ou automatisation.</p></div>
-        <div class="deliverable"><b>Documentation de livraison</b><p>Mode d'emploi court, limites, maintenance, checklist et suite proposée.</p></div>
+        <div class="deliverable"><b>Tu es libre</b><p>Coach, assistant métier, outil de diagnostic, app de contenu, outil perso ou mini-SaaS.</p></div>
+        <div class="deliverable"><b>Mais ce doit être utile</b><p>Ton app doit aider un utilisateur à décider, créer, comprendre, mémoriser ou agir.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="evaluation">
+  <section class="section" id="mobile">
     <div class="wrap">
-      <h2>Grille d'évaluation</h2>
-      <div class="score">
-        <div class="score-card accent"><strong>25%</strong><b>Cadrage</b><p>Le besoin client est clair et priorisé.</p></div>
-        <div class="score-card"><strong>25%</strong><b>Exécution</b><p>Le livrable fonctionne et reste simple à reprendre.</p></div>
-        <div class="score-card"><strong>25%</strong><b>Vérification</b><p>Les tests, sources et limites sont visibles.</p></div>
-        <div class="score-card"><strong>25%</strong><b>Présentation</b><p>La valeur est expliquée comme une offre client.</p></div>
+      <h2>02. Pense mobile d'abord</h2>
+      <div class="grid grid-3">
+        <article class="card accent"><b>Écran simple</b><p>Pas besoin d'une grosse app. Trois écrans propres suffisent.</p></article>
+        <article class="card"><b>Usage clair</b><p>L'utilisateur comprend quoi faire sans lire une longue explication.</p></article>
+        <article class="card"><b>Interface testable</b><p>Boutons, champs, chargement, erreur et résultat IA doivent être visibles.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="deroule">
+  <section class="section" id="obligatoire">
     <div class="wrap">
-      <h2>Déroulé conseillé</h2>
+      <h2>03. Les blocs obligatoires</h2>
+      <ul class="checklist">
+        <li>Un système de connexion : inscription, connexion ou compte utilisateur simulé proprement.</li>
+        <li>Une base de données : profils, requêtes, réponses, préférences ou historique.</li>
+        <li>Une API IA : l'app envoie une demande et affiche une réponse générée.</li>
+        <li>Une mémoire utilisateur : l'app réutilise une information sauvegardée.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="bdd">
+    <div class="wrap grid grid-2">
+      <article class="card accent"><b>04. La BDD</b><p>La base doit servir l'expérience. Elle garde au minimum l'utilisateur, ses demandes et les résultats importants.</p></article>
+      <article class="card"><b>05. La connexion</b><p>Chaque utilisateur doit avoir son espace. Même en V1, on doit sentir que la donnée est personnelle.</p></article>
+    </div>
+  </section>
+
+  <section class="section" id="memoire">
+    <div class="wrap">
+      <h2>06. La mémoire utilisateur</h2>
+      <p class="lead">La mémoire n'est pas juste un historique. L'app doit réutiliser quelque chose : un objectif, un niveau, un métier, une préférence, une ancienne réponse ou une progression.</p>
+    </div>
+  </section>
+
+  <section class="section" id="api">
+    <div class="wrap grid grid-2">
+      <article class="card accent"><b>07. L'API IA</b><p>L'IA doit avoir un rôle clair : conseiller, générer, analyser, reformuler, scorer ou expliquer.</p></article>
+      <article class="card"><b>Garde le contrôle</b><p>Prévois un état chargement, une erreur lisible et une limite simple si l'IA répond mal.</p></article>
+    </div>
+  </section>
+
+  <section class="section" id="build">
+    <div class="wrap">
+      <h2>08. Utilise Codex ou Claude Code</h2>
       <ol class="timeline">
-        <li><span>01</span><div><b>Choisir le cas</b><p>Un client fictif ou réel, un problème précis, un livrable réaliste.</p></div></li>
-        <li><span>02</span><div><b>Faire l'audit</b><p>Rassembler les sources, comprendre la situation, décider ce qui compte vraiment.</p></div></li>
-        <li><span>03</span><div><b>Construire une V1</b><p>Créer un livrable minimal, testable et compréhensible.</p></div></li>
-        <li><span>04</span><div><b>Tester et corriger</b><p>Contrôler les erreurs, le responsive, les données, les limites et les actions sensibles.</p></div></li>
-        <li><span>05</span><div><b>Présenter</b><p>Montrer le problème traité, le système, la valeur, la maintenance et la suite.</p></div></li>
+        <li><span>01</span><div><b>Décris l'idée</b><p>Explique l'utilisateur, le problème, les écrans et la donnée à garder.</p></div></li>
+        <li><span>02</span><div><b>Construis petit</b><p>Commence par une V1 simple avant d'ajouter des options.</p></div></li>
+        <li><span>03</span><div><b>Teste vraiment</b><p>Connexion, BDD, mémoire, appel IA, erreurs et affichage mobile.</p></div></li>
       </ol>
     </div>
   </section>
 
-  <section class="section" id="checklist">
+  <section class="section" id="presentation">
     <div class="wrap">
-      <h2>Checklist finale</h2>
+      <h2>09. Présente ton app</h2>
+      <div class="grid grid-3">
+        <article class="card accent"><b>Le problème</b><p>À qui sert l'app et pourquoi elle existe.</p></article>
+        <article class="card"><b>La démo</b><p>Connexion, action IA, mémoire et résultat affiché.</p></article>
+        <article class="card"><b>La suite</b><p>Ce que tu améliorerais si tu avais plus de temps.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rendu">
+    <div class="wrap">
+      <h2>10. Ce que tu rends</h2>
       <ul class="checklist">
-        <li>Le projet part d'un vrai besoin client, pas d'un outil choisi au hasard.</li>
-        <li>Les sources, prompts importants et décisions sont documentés.</li>
-        <li>Le livrable peut être testé par quelqu'un d'autre.</li>
-        <li>Les limites et risques sont annoncés clairement.</li>
-        <li>La prochaine action client est évidente : validation, correction, déploiement ou maintenance.</li>
+        <li>Le lien ou dossier du projet.</li>
+        <li>Une courte explication de l'idée et de l'utilisateur cible.</li>
+        <li>La preuve que la connexion, la BDD, la mémoire et l'API IA fonctionnent.</li>
+        <li>Une mini présentation de 3 minutes, simple et naturelle.</li>
       </ul>
     </div>
   </section>
